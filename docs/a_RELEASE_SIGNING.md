@@ -11,16 +11,20 @@
 | KEY_PASSWORD | 키 비밀번호 (store 비번과 동일해도 됨) |
 
 ---
+```
 1.1. Keytool 확인
 PowerShell:
 & "C:\Program Files\Android\Android Studio\jbr\bin\keytool.exe" -list -v -keystore "G:\secure\alcoholic-timer-upload.jks"
 
 1.2. PowerShell:
-```
 - 제일 먼저 버전 변경할 것
 app > build.gradle.kts
     versionCode = 2025100800 // YYYYMMDDxx
     versionName = "1.0.2"
+    
+- powershell.exe (관리자 아님) 실행
+먼저 secure 폴더에 해당앱 폴더 생성
+& "C:\Program Files\Android\Android Studio\jbr\bin\keytool.exe" -genkeypair -v -keystore "G:\secure\NoSugarDiet\nosugardiet-key.jks" -alias nosugardiet-alias -keyalg RSA -keysize 4096 -sigalg SHA256withRSA -validity 36500
 
 - 드라이브 & 디렉터리 이동
 G:
@@ -30,9 +34,9 @@ Get-ChildItem gradlew.bat
 파일 목록에 gradlew.bat 보이면 OK.
 
 - 서명 환경변수 (네 값으로 넣어, 따옴표 포함)
-$env:KEYSTORE_PATH="G:/secure/AlcoholicTimer_Secure/alcoholic-timer-upload.jks"
+$env:KEYSTORE_PATH="G:/secure/NoSugarDiet/nosugardiet-key.jks"
 $env:KEYSTORE_STORE_PW="****"
-$env:KEY_ALIAS="alcoholictimeruploadkey"
+$env:KEY_ALIAS="nosugardiet-alias"
 $env:KEY_PASSWORD="****"
 
 - 서명 리포트 재확인 (선택이지만 3초)
