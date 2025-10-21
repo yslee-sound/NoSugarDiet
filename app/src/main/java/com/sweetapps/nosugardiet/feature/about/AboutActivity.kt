@@ -19,6 +19,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.sweetapps.nosugardiet.core.ui.BaseActivity
 import com.sweetapps.nosugardiet.core.ui.LocalSafeContentPadding
+import com.sweetapps.nosugardiet.R
 
 class AboutActivity : BaseActivity() {
     override fun getScreenTitle(): String = getString(R.string.about_title)
