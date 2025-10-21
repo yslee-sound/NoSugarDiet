@@ -47,7 +47,7 @@ class LevelActivity : BaseActivity() {
         }
     }
 
-    override fun getScreenTitle(): String = "금주 레벨"
+    override fun getScreenTitle(): String = "탄산 끊기 레벨"
 }
 
 @OptIn(ExperimentalMaterial3Api::class)

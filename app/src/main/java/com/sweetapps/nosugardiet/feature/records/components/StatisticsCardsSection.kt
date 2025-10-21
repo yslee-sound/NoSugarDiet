@@ -166,7 +166,7 @@ fun StatisticsCardsSection(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
-            StatCard(title = "총 금주일", value = "${totalDays}일", modifier = Modifier.weight(1f))
+            StatCard(title = "총 탄산 끊기 일수", value = "${totalDays}일", modifier = Modifier.weight(1f))
             StatCard(title = "성공률", value = "${successRate}%", modifier = Modifier.weight(1f))
             StatCard(title = "시도 횟수", value = "${totalAttempts}회", modifier = Modifier.weight(1f))
         }

@@ -42,7 +42,7 @@ class AddRecordActivity : ComponentActivity() {
                         onSave = { record ->
                             val success = saveRecord(record)
                             if (success) {
-                                Toast.makeText(this, "금주 기록이 추가되었습니다", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(this, "탄산 끊기 기록이 추가되었습니다", Toast.LENGTH_SHORT).show()
                                 setResult(RESULT_OK)
                                 finish()
                             } else {
@@ -169,7 +169,7 @@ private fun AddRecordScreen(
             ) {
                 Column {
                     TopAppBar(
-                        title = { Text("금주 기록 추가", fontWeight = FontWeight.Bold) },
+                        title = { Text("탄산 끊기 기록 추가", fontWeight = FontWeight.Bold) },
                         navigationIcon = {
                             IconButton(onClick = onCancel) {
                                 Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "뒤로가기")
