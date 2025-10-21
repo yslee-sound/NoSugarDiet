@@ -44,6 +44,7 @@ import com.sweetapps.nosugardiet.core.ui.AppElevation
 import androidx.compose.foundation.BorderStroke
 import com.sweetapps.nosugardiet.core.util.AppUpdateManager
 import kotlinx.coroutines.launch
+import com.sweetapps.nosugardiet.R
 
 class RunActivity : BaseActivity() {
 

@@ -49,6 +49,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.math.roundToInt
 import androidx.core.content.edit // SharedPreferences 확장 함수 import 복구
+import com.sweetapps.nosugardiet.R
 
 class DetailActivity : ComponentActivity() {
 

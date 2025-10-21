@@ -42,6 +42,7 @@ import kotlin.math.min
 import com.sweetapps.nosugardiet.core.ui.AppElevation
 import com.sweetapps.nosugardiet.core.ui.LocalRequestGlobalLock
 import com.sweetapps.nosugardiet.core.ui.LocalSafeContentPadding
+import com.sweetapps.nosugardiet.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

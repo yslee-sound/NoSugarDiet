@@ -23,6 +23,7 @@ import com.sweetapps.nosugardiet.core.ui.AppElevation
 import com.sweetapps.nosugardiet.core.ui.BaseActivity
 import com.sweetapps.nosugardiet.core.util.Constants
 import com.sweetapps.nosugardiet.core.ui.LocalSafeContentPadding
+import com.sweetapps.nosugardiet.R
 
 class SettingsActivity : BaseActivity() {
     override fun getScreenTitle(): String = "설정"

@@ -56,13 +56,14 @@ import androidx.compose.ui.draw.alpha
 import com.sweetapps.nosugardiet.core.ui.components.AppUpdateDialog
 import androidx.core.graphics.drawable.toDrawable
 import com.sweetapps.nosugardiet.feature.addrecord.components.TargetDaysBottomSheet
+import com.sweetapps.nosugardiet.R
 import android.graphics.Color as AndroidColor
 
 class StartActivity : BaseActivity() {
     private lateinit var appUpdateManager: AppUpdateManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // 런처 액티비티에서만 스플래시 설치
+        // 런처 액티비티에서�� 스플래시 설치
         val splash = installSplashScreen()
         // Android 12+ 시스템 스플래시 종료 연출: 220ms 페이드 + 약간 확대 후 제거
         if (Build.VERSION.SDK_INT >= 31) {
@@ -77,7 +78,7 @@ class StartActivity : BaseActivity() {
                     .start()
             }
         }
-        // 스플래시 최소 표시 시간 (예: 800ms)
+        // 스플래시 최�� 표시 시간 (예: 800ms)
         val splashStart = SystemClock.uptimeMillis()
         val minShowMillis = 800L
         splash.setKeepOnScreenCondition { Build.VERSION.SDK_INT >= 31 && SystemClock.uptimeMillis() - splashStart < minShowMillis }

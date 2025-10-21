@@ -25,6 +25,7 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Close
 import com.sweetapps.nosugardiet.core.ui.LocalSafeContentPadding
+import com.sweetapps.nosugardiet.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

@@ -43,6 +43,7 @@ import com.sweetapps.nosugardiet.core.ui.LayoutConstants
 import com.sweetapps.nosugardiet.core.util.FormatUtils
 import com.sweetapps.nosugardiet.feature.start.StartActivity
 import com.sweetapps.nosugardiet.core.ui.AppElevation
+import com.sweetapps.nosugardiet.R
 
 class QuitActivity : BaseActivity() {
     override fun getScreenTitle(): String = getString(R.string.quit_title)

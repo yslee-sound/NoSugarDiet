@@ -23,6 +23,7 @@ import com.sweetapps.nosugardiet.core.ui.AppAlphas
 import com.sweetapps.nosugardiet.core.ui.AppElevation
 import java.text.SimpleDateFormat
 import java.util.*
+import com.sweetapps.nosugardiet.R
 
 @Composable
 fun RecordSummaryCard(

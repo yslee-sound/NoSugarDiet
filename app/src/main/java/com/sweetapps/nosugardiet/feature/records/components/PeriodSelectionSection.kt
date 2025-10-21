@@ -19,6 +19,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 import androidx.compose.foundation.BorderStroke
 import android.os.SystemClock
+import com.sweetapps.nosugardiet.R
 
 @Composable
 fun PeriodSelectionSection(

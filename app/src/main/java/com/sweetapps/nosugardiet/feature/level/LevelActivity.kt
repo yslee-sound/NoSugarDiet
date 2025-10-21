@@ -36,6 +36,7 @@ import kotlinx.coroutines.delay
 import java.util.Locale
 import androidx.compose.foundation.BorderStroke
 import com.sweetapps.nosugardiet.core.ui.LocalSafeContentPadding
+import com.sweetapps.nosugardiet.R
 
 class LevelActivity : BaseActivity() {
 
