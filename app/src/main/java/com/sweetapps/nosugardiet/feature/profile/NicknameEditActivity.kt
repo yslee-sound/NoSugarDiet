@@ -73,7 +73,7 @@ class NicknameEditActivity : BaseActivity() {
 
     private fun getNickname(): String {
         val sharedPref = getSharedPreferences("user_settings", MODE_PRIVATE)
-        return sharedPref.getString("nickname", "알중이1") ?: "알중이1"
+        return sharedPref.getString("nickname", "설탕파괴자1") ?: "설탕파괴자1"
     }
 
     private fun saveNickname(nickname: String) {
