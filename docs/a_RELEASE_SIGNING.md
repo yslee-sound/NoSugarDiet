@@ -28,7 +28,7 @@ app > build.gradle.kts
 
 - 드라이브 & 디렉터리 이동
 G:
-cd G:\Workspace\AlcoholicTimer
+cd G:\Workspace\NoSugarDiet
 (확인)
 Get-ChildItem gradlew.bat
 파일 목록에 gradlew.bat 보이면 OK.

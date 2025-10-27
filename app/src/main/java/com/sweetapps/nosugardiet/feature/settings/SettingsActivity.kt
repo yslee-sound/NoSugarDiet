@@ -47,7 +47,7 @@ fun SettingsScreen() {
 
     Column(
         modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp).padding(safePadding),
-        verticalArrangement = Arrangement.spacedBy(16.dp)
+        verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
         SettingsCard(title = "음주 비용", titleColor = colorResource(id = R.color.color_indicator_money)) {
             SettingsOptionGroup(
@@ -85,8 +85,8 @@ fun SettingsCard(title: String, titleColor: Color, content: @Composable () -> Un
         elevation = CardDefaults.cardElevation(defaultElevation = AppElevation.CARD), // lowered from CARD_HIGH
         border = BorderStroke(1.dp, colorResource(id = R.color.color_border_light)) // added subtle border for depth
     ) {
-        Column(modifier = Modifier.padding(16.dp)) {
-            Text(text = title, style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold), color = titleColor, modifier = Modifier.padding(bottom = 12.dp))
+        Column(modifier = Modifier.padding(12.dp)) {
+            Text(text = title, style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold), color = titleColor, modifier = Modifier.padding(bottom = 8.dp))
             content()
         }
     }
@@ -102,7 +102,7 @@ fun SettingsOptionItem(isSelected: Boolean, label: String, onSelected: () -> Uni
         colors = CardDefaults.cardColors(containerColor = if (isSelected) colorResource(id = R.color.color_accent_blue).copy(alpha = 0.1f) else colorResource(id = R.color.color_bg_card_light)),
         border = if (isSelected) BorderStroke(2.dp, colorResource(id = R.color.color_accent_blue)) else BorderStroke(1.dp, colorResource(id = R.color.color_border_light))
     ) {
-        Row(modifier = Modifier.fillMaxWidth().padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
+        Row(modifier = Modifier.fillMaxWidth().padding(10.dp), verticalAlignment = Alignment.CenterVertically) {
             RadioButton(selected = isSelected, onClick = onSelected, colors = RadioButtonDefaults.colors(selectedColor = colorResource(id = R.color.color_accent_blue), unselectedColor = colorResource(id = R.color.color_radio_unselected)))
             Spacer(modifier = Modifier.width(8.dp))
             Text(text = label, style = if (isSelected) MaterialTheme.typography.bodyLarge.copy(fontWeight = FontWeight.SemiBold) else MaterialTheme.typography.bodyLarge, color = if (isSelected) colorResource(id = R.color.color_indicator_days) else colorResource(id = R.color.color_text_primary_dark))
@@ -112,7 +112,7 @@ fun SettingsOptionItem(isSelected: Boolean, label: String, onSelected: () -> Uni
 
 @Composable
 fun SettingsOptionGroup(selectedOption: String, options: List<String>, labels: List<String>, onOptionSelected: (String) -> Unit) {
-    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+    Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
         options.forEachIndexed { index, option ->
             SettingsOptionItem(isSelected = selectedOption == option, label = labels[index], onSelected = { onOptionSelected(option) })
         }
