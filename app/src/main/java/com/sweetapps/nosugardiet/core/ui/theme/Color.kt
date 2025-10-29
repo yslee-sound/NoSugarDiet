@@ -22,7 +22,7 @@ val AmberSecondaryDark = Color(0xFFFFB74D)
 
 val SurfaceLight = Color(0xFFFFFFFF)
 val SurfaceDark = Color(0xFF121212)
-val SurfaceVariantLight = Color(0xFFE9ECEF)
+val SurfaceVariantLight = Color(0xFFEAF6FF) // 로고 파란색(#43B7FF)을 연하게 변형
 val SurfaceVariantDark = Color(0xFF2C2C2C)
 val OnSurface = Color(0xFF2C3E50)
 val OnSurfaceVariant = Color(0xFF636E72)
@@ -31,4 +31,3 @@ val OnSurfaceVariantDark = Color(0xFFB0BEC5)
 
 val ErrorLight = Color(0xFFE53935)
 val ErrorDark = Color(0xFFEF9A9A)
-
